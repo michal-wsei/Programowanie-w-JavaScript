@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+  </head>
+
+  <body>
+    <div
+      id="noteslist"
+      style="
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        border: 1px solid black;
+        padding: 5px;
+        margin: 10px 0;
+      "
+    >
+      <h3>Notes list</h3>
+      <ol id="list"></ol>
+    </div>
+
+    <div style="display: flex; column-gap: 10px;">
+      <div
+        id="addnote"
+        style="
+          display: flex;
+          flex-direction: column;
+          width: 300px;
+          border: 1px solid black;
+          padding: 5px;
+          margin: 10px 0;
+        "
+      >
+        <h3>Add note</h3>
+        <label for="title">Title</label>
+        <input type="text" id="title" style="margin: 5px 0 10px 0;" />
+        <label for="content">Content</label>
+        <input type="text" id="content" style="margin: 5px 0 10px 0;" />
+        <label for="color">Color</label>
+        <input type="text" id="color" style="margin: 5px 0 10px 0;" />
+        <label for="pinned">Pinned</label>
+        <div style="display: flex; align-items: left;">
+          <input type="checkbox" id="pinned" style="margin: 5px 0 10px 0;" />
+        </div>
+        <button id="addnotebutton">Add note</button>
+      </div>
+
+      <div
+        id="editnote"
+        style="
+          display: flex;
+          flex-direction: column;
+          width: 300px;
+          border: 1px solid black;
+          padding: 5px;
+          margin: 10px 0;
+        "
+      >
+        <h3>Edit note</h3>
+        <label for="title">Title</label>
+        <input type="text" id="title" style="margin: 5px 0 10px 0;" />
+        <label for="content">Content</label>
+        <input type="text" id="content" style="margin: 5px 0 10px 0;" />
+        <label for="color">Color</label>
+        <input type="text" id="color" style="margin: 5px 0 10px 0;" />
+        <label for="pinned">Pinned</label>
+        <div style="display: flex; align-items: left;">
+          <input type="checkbox" id="pinned" style="margin: 5px 0 10px 0;" />
+        </div>
+        <input type="text" hidden id="note-id" />
+        <button id="editnotebutton">Edit note</button>
+      </div>
+    </div>
+
+    <script src="src/index.js"></script>
+  </body>
+</html>
